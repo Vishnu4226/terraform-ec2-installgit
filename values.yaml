@@ -1,0 +1,7 @@
+data:
+  name: testvm
+  keypair: windows
+  subnetid: subnet-9a098ed0
+  imageid: ami-09e99ecc6126d3d36
+  instancetype: t2.large
+  securitygroupid: 	sg-0262ccedac1bef9a2
