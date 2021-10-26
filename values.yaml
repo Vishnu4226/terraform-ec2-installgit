@@ -1,6 +1,6 @@
 data:
   name: testvm
-  keypair: windows
+  keypair: vishnu
   subnetid: subnet-9a098ed0
   imageid: ami-058b12f51d412b5db
   instancetype: t2.large
