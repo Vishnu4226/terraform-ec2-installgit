@@ -11,7 +11,8 @@ module "data_ec2_instance" {
   monitoring             = true
   user_data = <<EOF
 <powershell>
-Start-Process -Wait -FilePath "terraform-ec2-installgit\Git-2.33.1-64-bit.exe" -Argument "/silent" -PassThru
+Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.33.1.windows.1/Git-2.33.1-64-bit.exe -OutFile 'c:\Users\Administrator\Downloads\git.exe'		
+Start-Process -Wait -FilePath "c:\Users\Administrator\Downloads\git.exe" -Argument "/silent" -PassThru
 Restart-Computer
 </powershell>
 EOF
